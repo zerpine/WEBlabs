@@ -74,7 +74,7 @@ echo $a % $b;
 //checking for remainder
 echo "\n";
 
-if(0 == $a % $b) {
+if(0 === $a % $b) {
     echo 'Делится: ', $a / $b;
 }
 
@@ -162,7 +162,7 @@ $num1 = 30;
 $div_arr = [];
 echo "divisors of 30: ";
 for($i = 1; $i <= $num1; $i++) {
-    if (0 == $num1 % $) {
+    if (0 === $num1 % $) {
         $div_arr[] = $i;
         echo "{$i} ";
     }
@@ -345,7 +345,7 @@ function checkSum($a, $b): bool {
 }
 
 function checkEqual($a, $b): bool {
-    if ($a == $b) {
+    if ($a === $b) {
         return true;
     }
     else {
@@ -354,7 +354,7 @@ function checkEqual($a, $b): bool {
 }
 
 $test = 0;
-if (0 == $test) echo "\nВерно";
+if (0 === $test) echo "\nВерно";
 
 $age = 41;
 if ($age < 10 || $age > 99)
@@ -372,7 +372,7 @@ else
 }
 
 $arr = [1, 3, 12];
-if (3 == count($arr)) {
+if (3 === count($arr)) {
     echo "sum of array elements: " . array_sum($arr);
 }
 
