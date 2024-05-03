@@ -33,16 +33,10 @@ $result = $service->spreadsheets_values->append(
     $params
 );
 
-if ($result) {
-    echo 'Данные успешно добавлены в таблицу!!!';
-} else {
-    echo 'Error 404';
-}
-
 $response = $service->spreadsheets_values->get($spreadsheetId, $range);
 $values = $response->getValues();
 
-// Отображение данных на странице
+// Отображение данных
 if (!empty($values)) {
     echo "<table border='1'>";
     foreach ($values as $row) {
@@ -53,6 +47,4 @@ if (!empty($values)) {
         echo "</tr>";
     }
     echo "</table>";
-} else {
-    echo "Данных нету";
 }
